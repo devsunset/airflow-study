@@ -18,11 +18,13 @@ https://github.com/apache/airflow
 https://github.com/tuanavu/airflow-tutorial/
 https://github.com/jghoman/awesome-apache-airflow
 
+
 - sample
 https://blog.si-analytics.ai/59 - sample_file_create_read_delete_drag.py
 https://m.blog.naver.com/wideeyed/221565240108 - sample_bash_op_dag.py
 https://m.blog.naver.com/wideeyed/221565276777 - sample_python_op_dag.py 
-
+https://www.comtec.kr/2021/08/09/airflow-tutorial/
+https://www.comtec.kr/2021/08/11/airflow-operator-소개 
 
 
 ########################################################
