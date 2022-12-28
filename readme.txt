@@ -17,8 +17,8 @@ https://github.com/apache/airflow
 
 - sample
 https://blog.si-analytics.ai/59 - sample_file_create_read_delete_drag.py
-https://m.blog.naver.com/wideeyed/221565240108 - sample_hello_dag.py
-https://m.blog.naver.com/wideeyed/221565276777  
+https://m.blog.naver.com/wideeyed/221565240108 - sample_bash_op_dag.py
+https://m.blog.naver.com/wideeyed/221565276777 -  
 
 
 
