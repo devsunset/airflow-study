@@ -25,13 +25,18 @@ https://m.blog.naver.com/wideeyed/221565240108 - sample_bash_op_dag.py
 https://m.blog.naver.com/wideeyed/221565276777 - sample_python_op_dag.py 
 https://www.comtec.kr/2021/08/09/airflow-tutorial/
 https://www.comtec.kr/2021/08/11/airflow-operator-소개 
-
+https://www.bucketplace.com/post/2021-04-13-2021-04-13-버킷플레이스-airflow-도입기/
 
 ########################################################
 ### Airflow Guide
 
 # Airflow
 - Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.  
+Airflow는 Python 코드로 워크플로우(workflow)를 작성하고, 스케쥴링, 모니터링 하는 플랫폼 
+Airflow를 통해서 데이터엔지니어링의 ETL 작업을 자동화하고, DAG(Directed Acyclic Graph) 형태의 워크플로우 
+작성이 가능 이를 통해 더 정교한 dependency를 가진 파이프라인을 설정할 수 있음
+AWS, GCP 모두 Airflow managed service를 제공할 정도로 전세계 데이터팀들에게 널리 사용되고 있으며 
+그만큼 넓은 커뮤니티를 형성
 
 # OverView
 https://airflow.apache.org/docs/apache-airflow/stable/index.html
@@ -40,6 +45,7 @@ https://airflow.apache.org/docs/apache-airflow/stable/index.html
 https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html
 
 # Airflow 구조
+https://airflow.apache.org/docs/apache-airflow/stable/concepts.html
 ---------------------------------------------------------
 * Metadata Database	
 - Airflow에서 실행할 작업에 관한 정보들을 저장
@@ -74,8 +80,19 @@ Airflow에서는 Task의 연결관계를 DAG로 관리하고, Webserver를 통�
 Airflow에서 실행할 작업들을 파이프라인 형태로 저장
 ---------------------------------------------------------
 
-
 Airflow는 Scheduler가 DAG directory의 작업을 가져와서 Workers에서 실행하는 형태
+
+# Airflow Operator
+각 Airflow DAG는 여러 Task로 구성 
+operator나 sensor가 하나의 Task로 구성 
+Airflow는 기본적인 Task를 위해 다양한 operator를 제공
+
+BashOperator : bash command를 실행
+PythonOperator : Python 함수를 실행
+EmailOperator : Email을 발송
+MySqlOperator : sql 쿼리를 수행
+Sensor : 시간, 파일, db row, 등등을 기다리는 센서
+
 
 
 
