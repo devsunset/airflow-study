@@ -18,14 +18,18 @@ https://github.com/apache/airflow
 https://github.com/tuanavu/airflow-tutorial/
 https://github.com/jghoman/awesome-apache-airflow
 
-
-- sample
+- Tutorials 
 https://blog.si-analytics.ai/59 - sample_file_create_read_delete_drag.py
 https://m.blog.naver.com/wideeyed/221565240108 - sample_bash_op_dag.py
 https://m.blog.naver.com/wideeyed/221565276777 - sample_python_op_dag.py 
 https://www.comtec.kr/2021/08/09/airflow-tutorial/
 https://www.comtec.kr/2021/08/11/airflow-operator-소개 
 https://www.bucketplace.com/post/2021-04-13-2021-04-13-버킷플레이스-airflow-도입기/
+
+https://lsjsj92.tistory.com/tag/airflow
+https://data-engineer-tech.tistory.com/tag/airflow
+https://dydwnsekd.tistory.com/category/BigData/Airflow?page=3
+https://www.bearpooh.com/tag/Airflow
 
 ########################################################
 ### Airflow Guide
