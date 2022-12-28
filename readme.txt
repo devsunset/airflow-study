@@ -35,7 +35,7 @@ https://www.bearpooh.com/tag/Airflow
 ### Airflow Guide
 
 # Airflow
-- Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.  
+Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.  
 Airflow는 Python 코드로 워크플로우(workflow)를 작성하고, 스케쥴링, 모니터링 하는 플랫폼 
 Airflow를 통해서 데이터엔지니어링의 ETL 작업을 자동화하고, DAG(Directed Acyclic Graph) 형태의 워크플로우 
 작성이 가능 이를 통해 더 정교한 dependency를 가진 파이프라인을 설정할 수 있음
@@ -48,29 +48,31 @@ https://airflow.apache.org/docs/apache-airflow/stable/index.html
 # Installation
 https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html
 
-# Airflow 구조
+# Airflow 구성 요소 
 https://airflow.apache.org/docs/apache-airflow/stable/concepts.html
 ---------------------------------------------------------
 * Metadata Database	
-- Airflow에서 실행할 작업에 관한 정보들을 저장
+Airflow에서 실행할 작업에 관한 정보들을 저장
 작업 및 파이프라인의 메타데이터 저장소
 예를 들어 task status(queued, scheduled, running, success, failed, etc) 가 저장
 Airflow를 처음 다운로드하면 기본적으로 빠른 시작을 위해 SQLite 가 설치되는데,
 본격적으로 사용하기 위해선 mysql이나 postgres를 연결
 
 * Webserver 		
-- Airflow의 user interface 제공
+Airflow의 user interface 제공
 
 * Scheduler 		
-- Airflow의 DAG와 작업들을 모니터링하고 실행 순서와 상태 관리
+Airflow의 DAG와 작업들을 모니터링하고 실행 순서와 상태 관리
 모든 작업과 DAG을 모니터링하다가 Metadatabase 내 모든 작업의 status를 모니터링
 특정 작업의 dependency가 만족되면 이를 실행시킬 뿐만 아니라, 이런 모든 작업의 실행 순서 또한 결정
-•  Executor - 스케쥴러와 함께 동작하는 구성요소 status가 queued인 태스크를 확인하며 
-   실제 어떤 리소스가 투입되어 실행이 될 것인지를 결정
-   흔히 쓰이는 것으로는 Local Executor, Celery Executor, Kubernetes Executor 등이 있음 
+
+* Executor 
+스케쥴러와 함께 동작하는 구성요소 status가 queued인 태스크를 확인하며 
+실제 어떤 리소스가 투입되어 실행이 될 것인지를 결정
+흔히 쓰이는 것으로는 Local Executor, Celery Executor, Kubernetes Executor 등이 있음 
 
 * Workers		
-- Airflow의 작업을 실행하는 공간
+Airflow의 작업을 실행하는 공간
 실제 태스크를 수행하는 구성요소
 필요에 따라 Scale-out 되어 병렬 작업이나 동시에 여러 태스크를 진행
 Executor 및 airflow.cfg 에 의해 작업 환경 구성이 완성
