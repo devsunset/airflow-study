@@ -37,7 +37,7 @@ https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html
 # Airflow 구조
 * Scheduler 		- Airflow의 DAG와 작업들을 모니터링하고 실행 순서와 상태 관리
 * Workers에서		- Airflow의 작업을 실행하는 공간
-* Metadata Database - Airflow에서 실행할 작업에 관한 정보들을 저장
+* Metadata Database	- Airflow에서 실행할 작업에 관한 정보들을 저장
 * Webserver 		- Airflow의 user interface 제공
 * DAG directory 	- Airflow에서 실행할 작업들을 파이프라인 형태로 저장
 
