@@ -86,16 +86,6 @@ Airflow에서 실행할 작업들을 파이프라인 형태로 저장
 
 Airflow는 Scheduler가 DAG directory의 작업을 가져와서 Workers에서 실행하는 형태
 
-# Airflow Operator
-각 Airflow DAG는 여러 Task로 구성 
-operator나 sensor가 하나의 Task로 구성 
-Airflow는 기본적인 Task를 위해 다양한 operator를 제공
-
-BashOperator : bash command를 실행
-PythonOperator : Python 함수를 실행
-EmailOperator : Email을 발송
-MySqlOperator : sql 쿼리를 수행
-Sensor : 시간, 파일, db row, 등등을 기다리는 센서
 
 
 
