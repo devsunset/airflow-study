@@ -47,6 +47,13 @@ Airflow를 통해서 데이터엔지니어링의 ETL 작업을 자동화하고, 
 AWS, GCP 모두 Airflow managed service를 제공할 정도로 전세계 데이터팀들에게 널리 사용되고 있으며 
 그만큼 넓은 커뮤니티를 형성
 
+Airflow의 특성
+Dynamic : Airflow pipeline(동작순서, 방식)을 python을 이용해 구성하기 때문에 동적인 구성이 가능
+Extensible : python을 이용해 Operator, executor을 사용해 사용자 환경에 맞게 확장 사용 가능
+Elegant : 간결하고 명시적이며 jinja template를 이용해 parameter를 이용해 데이터를 전달하고 파이프라인을 생성하는 것이 가능
+Scalable : 분산구조와 메세지큐를 이용해 scale out와 워커간 협업을 지원
+
+
 # Quick Start
 https://airflow.apache.org/docs/apache-airflow/stable/start.html
 
