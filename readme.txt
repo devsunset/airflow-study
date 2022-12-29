@@ -135,8 +135,8 @@ https://airflow.apache.org/docs/apache-airflow/stable/concepts.html
 
 	* Variable
 	Variable는 위에서 언급한 것과 같이 Airflow에서 공통적으로 사용 가능한 변수들을 모아놓는 곳으로 Web UI에서 관리가 가능하다
-	key-value의 형식으로 저장되어 있으며 보안을 위해 password, secret, passwd, authorization,
-	api_key, apikey, access_token 등의 키워드가 포함된 key를 가지는 경우 Web UI에서는 value가 보이지 않는 암호화된 key를 생성할 수 있다.
+	key-value의 형식으로 저장되어 있으며 보안을 위해 password, secret, passwd, authorization, api_key, apikey
+	access_token 등의 키워드가 포함된 key를 가지는 경우 Web UI에서는 value가 보이지 않는 암호화된 key를 생성할 수 있다.
 
 	* Connection
 	Connecion은 외부 시스템과 연결하는 방식에 대한 정보를 저장해놓는 곳으로 Operator, Hook등에서 Connection의 정보를 사용한다.
