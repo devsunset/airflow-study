@@ -35,7 +35,11 @@ https://data-engineer-tech.tistory.com/tag/airflow
 ########################################################
 ### Airflow Guide
 
-# Airflow
+https://airflow.apache.org/
+
+# OverView
+https://airflow.apache.org/docs/apache-airflow/stable/index.html
+
 Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.  
 Airflow는 Python 코드로 워크플로우(workflow)를 작성하고, 스케쥴링, 모니터링 하는 플랫폼 
 Airflow를 통해서 데이터엔지니어링의 ETL 작업을 자동화하고, DAG(Directed Acyclic Graph) 형태의 워크플로우 
@@ -43,11 +47,17 @@ Airflow를 통해서 데이터엔지니어링의 ETL 작업을 자동화하고, 
 AWS, GCP 모두 Airflow managed service를 제공할 정도로 전세계 데이터팀들에게 널리 사용되고 있으며 
 그만큼 넓은 커뮤니티를 형성
 
-# OverView
-https://airflow.apache.org/docs/apache-airflow/stable/index.html
+# Quick Start
+https://airflow.apache.org/docs/apache-airflow/stable/start.html
 
 # Installation
 https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html
+
+# Tutorials
+https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html
+
+# How-to Guides
+https://airflow.apache.org/docs/apache-airflow/stable/howto/index.html
 
 # Airflow 구성 요소 
 https://airflow.apache.org/docs/apache-airflow/stable/concepts.html
