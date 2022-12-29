@@ -126,7 +126,8 @@ https://airflow.apache.org/docs/apache-airflow/stable/concepts.html
 	* Xcom
 	Xcom은 Airflow task간 데이터 전달을 위한 기능으로 push, pull 방식으로 데이터를 공유하는 기능을 말하는데
 	주의할 점은 한 DAG안에서만 공유된다는 점이다 (다른 DAG 간 공통된 값을 이용하려는 경우에는 Variable를 사용)
-	xcom_push, xcom_pull을 이용해 데이터를 전달하고 전달받는 방식이며 PythonOperator을 사용하는 경우에는 return 값이 자동으로 Xcom에 push 된다
+	xcom_push, xcom_pull을 이용해 데이터를 전달하고 전달받는 방식이며 PythonOperator을 사용하는 경우에는
+	return 값이 자동으로 Xcom에 push 된다
 	Xcom에 대한 설명을 보고 DAG파일 안에서 데이터를 공유하는 것이 가능한데 Xcom이라는 기능이 왜 필요한지를 생각할 수 있는데,
 	Airflow Worker을 여러 개 사용하는 경우 하나의 DAG가 동일한 Worker에서 동작하는 것을 보장할 수 없다
 	예를 들어, DAG안에 t1, t2 task가 존재하는 경우 t1은 server1에서 동작하고, t2는 server2에서 동작하게 되면 task 간 
@@ -134,8 +135,8 @@ https://airflow.apache.org/docs/apache-airflow/stable/concepts.html
 
 	* Variable
 	Variable는 위에서 언급한 것과 같이 Airflow에서 공통적으로 사용 가능한 변수들을 모아놓는 곳으로 Web UI에서 관리가 가능하다
-	key-value의 형식으로 저장되어 있으며 보안을 위해 password, secret, passwd, authorization, api_key, apikey, access_token 
-	등의 키워드가 포함된 key를 가지는 경우 Web UI에서는 value가 보이지 않는 암호화된 key를 생성할 수 있다.
+	key-value의 형식으로 저장되어 있으며 보안을 위해 password, secret, passwd, authorization,
+	api_key, apikey, access_token 등의 키워드가 포함된 key를 가지는 경우 Web UI에서는 value가 보이지 않는 암호화된 key를 생성할 수 있다.
 
 	* Connection
 	Connecion은 외부 시스템과 연결하는 방식에 대한 정보를 저장해놓는 곳으로 Operator, Hook등에서 Connection의 정보를 사용한다.
@@ -145,7 +146,6 @@ https://airflow.apache.org/docs/apache-airflow/stable/concepts.html
 	* Hook
 	Hook는 외부 플랫폼에 대한 인터페이스를 제공하는 것으로 Hive, S3, MySQL HDFS 등에 접근할 수 있는 
 	다양한 Hook을 제공 Hook은 독립적으로 task가 될 수 없으며, Operator과 함께 사용된다.
-
 
 
 
